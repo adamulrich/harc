@@ -29,7 +29,7 @@
   --paragraph-color-on-color: #5e5e63;
 
   /* paragraph text on a colored background */
-  --paragraph-background-color: #8dc6d7;
+  --paragraph-background-color: #d5a75d;
   --nav-link-color: white;
   --nav-background-color: #2fa229c5;
   --nav-hover-link-color: #1d40a8;
@@ -498,7 +498,9 @@ footer hr {
 .weather-table {
   max-width: 320px;
   margin: 0 auto;
-}
+  border: none;
+  }
+
 
 .current-menu {
   color: #000;
@@ -679,23 +681,6 @@ div.full-width-card {
   grid-column: 1/6;
 }
 
-
-#rates {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-#rates td, #rates th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-#rates tr:nth-child(even){background-color: #f2f2f2;}
-
-#rates tr:hover {background-color: #ddd;}
-
-
 main div.home-page-card a {
   display: inline;
 }
@@ -708,16 +693,24 @@ div.text-align-left p{
   text-align: left;
 }
 
-#frequencies th, td {
+.frequencies th, td {
   font-size: medium;
   font-family: 'Courier New', Courier, monospace;
   padding: 12px;
   text-align: left;
-  background-color: var(--headline-color-on-white);
-  color: white;
+  border: black 1px solid;
 }
 
-#frequencies th {
+table.frequencies th {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
+}
+
+table.frequencies tr:nth-child(even){background-color: #f2f2f2;}
+
+table.frequencies tr:hover {background-color: #ddd;}
+
+.weather-table td, th {
+  border: none;
+  padding: none;
 }
