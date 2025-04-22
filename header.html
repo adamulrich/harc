@@ -1,0 +1,74 @@
+<header>
+    <div class="header-logo">
+        <a class="header-link" href="./index.html">
+            <img src="images/harc_logo_200.jpg" class="logo header" width="76" height="76"
+                alt="Highline ARC">
+        </a>
+    </div>
+    <div class="brand-name">
+        <h1 class="brand-first-line">
+            <span class="first-line">
+                Highline Amateur Radio Club
+            </span>
+            <span class="subtitle">
+                Serving the Burien, SeaTac, Des Moines, Normandy Park, and the North Higline area of Unincorporated King County.
+            </span>
+        </h1>
+    </div>
+    <div class="header-logo right-logo">
+        <a class="header-link" href="./index.html">
+            <img src="images/harc_logo_200.jpg" class="logo header" width="76" height="76"
+                alt="Highline ARC">
+        </a>
+    </div>
+
+    <button class="menu-btn" id="ham-btn"><span>&#9776;</span><span>X</span></button>
+    <p class="date" id="date"></p>
+    <div class="header-social">
+        <a href="https://www.facebook.com/groups/356960276978"><img class="social header" src="images/facebook.webp" width="42"
+                height="42" alt="facebook"></a>
+    </div>
+    <nav class="navigation">
+        <ul class="main-nav closed" id="main_nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About HARC</a></li>
+            <li><a href="frequencies.html">Frequencies</a></li>
+            <li><a href="meetings.html">Meetings</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="officers.html">Officers</a></li>
+            <li><a href="emcomm.html">EMCOMM</a></li>
+            <li><a href="contact.html">Contact HARC</a></li>
+            <li><a href="bylaws.html">By Laws</a></li>
+            <li><a href="member_list.html">Member List</a></li>
+        </ul>
+    </nav>
+    <script>
+        date = new Date();
+        // set date value in header
+        const fullDate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(date);
+        document.querySelector("#date").innerHTML = fullDate;
+
+        // toggle hamburger button
+        function toggleMenu() {
+            document.getElementById("main_nav").classList.toggle("open");
+            document.getElementById("ham-btn").classList.toggle("open");
+            document.getElementById("main_nav").classList.toggle("closed");
+        }
+
+        // add event to toggle 
+        document.getElementById("ham-btn").onclick = toggleMenu;
+
+        // highlight current menu item
+        const mainNav = document.getElementById("main_nav");
+        const mainNavChildren = mainNav.children;
+
+        for (let i = 0; i < mainNavChildren.length; i++) {
+            if (mainNavChildren[i].children[0].href.split("/").slice(-1)[0] == URL) {
+                mainNavChildren[i].children[0].classList.add('current-menu');
+            }
+
+        }
+
+
+    </script>
+</header>

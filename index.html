@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Highline Amateur Radio Club">
+    <meta name="theme-color" content="blue">
+    <meta name="name" content="Highline ARC">
+    <meta name="application-name" content="Highline ARC">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" sizes="128x128" href="images/harc_logo_128.png">
+    <link rel="icon" sizes="180x180" href="images/harc_logo_180.png">
+    <link rel="icon" sizes="192x192" href="images/harc_logo_192.png">
+    <link rel="icon" sizes="256x256" href="images/harc_logo_256.png">
+    <link rel="icon" sizes="512x512" href="images/harc_logo_512.png">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script type="text/javascript">
+        $(function(){
+        $("[data-load]").each(function(){
+            $(this).load($(this).data("load"), function(){
+            });
+        });
+    })
+    </script>
+    <title>Highline Amateur Radio Club</title>
+</head>
+<div data-load="header.html"></div>
+<body>
+   
+    <main>
+        <div class="hero">
+            <picture class="hero-image-container">
+                <source srcset="images/RegionalMap.png" media="(min-width:748px) and (max-width:1199px)">
+                <source srcset="images/RegionalMap.png" media="(min-width:1200px)">
+                <img src="images/RegionalMap.png" class="hero-img" width="400" height="225"
+                    alt="Map of Region" >
+            </picture>
+        </div>
+        <div class="card-container">
+            <div class="about-card home-page-card">
+                <h2>Highline Amateur Radio Club</h2>
+                <img src="images/RegionalMap.png" alt="regional map" width="400" height="225">
+                <h3>Would You Like to Join Our Club?</h3>
+                <p>If you are interested in learning more about the Highline Amateur Radio Club or its activities, contact the club:</p>
+                <p><b>mail</b></p>
+                <p>Highline Amateur Radio Club</p>
+                <p>PO Box 852 Seahurst, WA. 98062</p>
+                <p><b>email</b></p>
+                <p><a href="mailto:NC7G@highlinearc.org">NC7G@highlinearc.org</a></p>
+            </div>
+
+            <div class="home-page-card status-card">
+                <p></p>
+            </div>
+            <div class="weather-card home-page-card">
+                <h2 class="">Current Weather</h2>
+                <h3 class="">in Burien, WA</h3>
+                <div class="weather-table">
+                    <table id="weather" class="center">
+                        <tr>
+                            <td>
+                                <p>Current:</p>
+                            </td>
+                            <td>
+                                <p><img class="" id="weather_icon" src="images/01d@4x.png" height="42" width="42" loading="lazy"
+                                        alt="weather icon"></p>
+                            </td>
+                            <td>
+                                <h4><span id='temperature'>32</span>°F</h4>
+                            </td>
+                            <td>
+                                <p><span id="forecast">Partly Cloudy</span></p>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="center">
+                        <tr>
+                            <td>
+                                <p class="table-header">Wind</p>
+                            </td>
+                            <td>
+                                <p class="table-header">Wind Chill</p>
+                            </td>
+                            <td>
+                                <p class="table-header">Humidity</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><span id='wind_speed'>20</span> mph</p>
+                            </td>
+                            <td>
+                                <p><span id='wind_chill'>N/A</span></p>
+                            </td>
+                            <td>
+                                <p><span id='humidity'>20</span> %</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <hr class="weather-table">
+                <div class="weather-table">
+                    <h4 class="">3 Day Forecast</h4>
+                    <table id="forecast-table" class="center">
+                        <tr>
+                            <td>
+                                <p id="day1-name">Day 1</p>
+                            </td>
+                            <td><img class="spotlight-icon" id="day1-icon" src="images/01d@4x.png" height="42"
+                                    width="42" alt="weather icon"></td>
+                            <td>
+                                <p><span id='day1-temp'>0</span>°F</p>
+                            </td>
+                            <td>
+                                <p><span id='day1-description'>Cloudy</span></p>
+                            </td>
+                        <tr>
+                            <td>
+                                <p id="day2-name">Day 2</p>
+                            </td>
+                            <td><img class="spotlight-icon" id="day2-icon" src="images/01d@4x.png" height="42"
+                                    width="42" alt="weather icon"></td>
+                            <td>
+                                <p><span id='day2-temp'>0</span>°F</p>
+                            </td>
+                            <td>
+                                <p><span id='day2-description'>Cloudy</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p id="day3-name">Day 3</p>
+                            </td>
+                            <td><img class="spotlight-icon" id="day3-icon" src="images/01d@4x.png" height="42"
+                                    width="42" alt="weather icon"></td>
+                            <td>
+                                <p><span id='day3-temp'>0</span>°F</p>
+                            </td>
+                            <td>
+                                <p><span id='day3-description'>Cloudy</span></p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div data-load="footer.html"></div>
+</body>
+
+</html>

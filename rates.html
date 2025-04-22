@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Highline Amateur Radio Club">
+    <meta name="theme-color" content="blue">
+    <meta name="name" content="Highline ARC">
+    <meta name="application-name" content="Highline ARC">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" sizes="128x128" href="images/harc_logo_128.png">
+    <link rel="icon" sizes="180x180" href="images/harc_logo_180.png">
+    <link rel="icon" sizes="192x192" href="images/harc_logo_192.png">
+    <link rel="icon" sizes="256x256" href="images/harc_logo_256.png">
+    <link rel="icon" sizes="512x512" href="images/harc_logo_512.png">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/script.js" defer></script>
+    <script type="text/javascript">
+        $(function(){
+        $("[data-load]").each(function(){
+            $(this).load($(this).data("load"), function(){
+            });
+        });
+    })
+    </script>
+    <title>Highline ARC</title>
+</head>
+<div data-load="header.html"></div>
+<body>
+   <main>
+        <div class="card-container contact-card-container">
+            <div class="contact-card home-page-card">
+                <h2 class="contact">Rate Summary</h2>
+                <table id="rates" class="contact">
+                    <tr>
+                        <td colspan="2" style="text-align: center;"><b>Effective Date: July 1 2021</b></td>
+                    </tr>
+                    <tr>
+                        <td>Basic Charge</td><td>$250.00 every 4 months</td>
+                    </tr>
+                    <tr>
+                        <td>Usage 4001 to 8000 ft³</td><td>$3.30 every 100 ft³</td>
+                    </tr>
+                    <tr>
+                        <td>Usage 8001+ ft³</td><td>$3.70 every 100 ft³</td>
+                    </tr>
+                </table>    
+                
+            </div>
+    
+            <div class="home-page-card about-card">
+                <h2>Rates</h2>
+                <p class="contact">Our rate sheet in detail is found here
+                    <a href="https://docs.google.com/spreadsheets/d/122IvC7cQc_SfuoqNYSMCIF1bhEkMeacw/edit?gid=628203259#gid=628203259">
+                        Rate Sheet
+                    </a>
+                </p>
+        
+            </div>
+
+        </div>
+    </main>
+    <div data-load="footer.html"></div>
+</body>
+
+</html>
