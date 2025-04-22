@@ -714,3 +714,9 @@ table.frequencies tr:hover {background-color: #ddd;}
   border: none;
   padding: none;
 }
+
+.two-column-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 100px;
+}
