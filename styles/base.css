@@ -392,6 +392,11 @@ div.home-page-card img {
   height: auto;
 }
 
+div.contact-card img {
+  width: 100px;
+}
+
+
 div.weather-card img {
   width: 40px;
   margin: 0 auto;
@@ -654,7 +659,6 @@ div.contact-card-container {
 }
 
 div.contact-card {
-  grid-column: 1/2;
   margin-bottom: 0px;
   margin-top: 5px;
 }
@@ -697,4 +701,8 @@ div.full-width-card {
   text-align: left;
   background-color: #04AA6D;
   color: white;
+}
+
+main div.home-page-card a {
+  display: inline;
 }
