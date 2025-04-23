@@ -731,13 +731,12 @@ table.frequencies tr:hover {background-color: #ddd;}
 }
 
 .two-column-card {
-  display: grid;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  grid-template-columns: 1fr 1fr;
 }
 
-.calendar-frame {
+iframe.calendar-frame {
   width: 350px;
   height: 200px;
 }
