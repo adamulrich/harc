@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Highline Amateur Radio Club">
+    <meta name="theme-color" content="blue">
+    <meta name="name" content="Highline ARC">
+    <meta name="application-name" content="Highline ARC">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" sizes="128x128" href="images/harc_logo_128.JPG">
+    <link rel="icon" sizes="180x180" href="images/harc_logo_180.JPG">
+    <link rel="icon" sizes="192x192" href="images/harc_logo_192.JPG">
+    <link rel="icon" sizes="256x256" href="images/harc_logo_256.JPG">
+    <link rel="icon" sizes="512x512" href="images/harc_logo_512.JPG">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/script.js" defer></script>
+    <script type="text/javascript">
+        $(function () {
+            $("[data-load]").each(function () {
+                $(this).load($(this).data("load"), function () {
+                });
+            });
+        })
+    </script>
+    <title>Highline ARC</title>
+</head>
+<div data-load="header.html"></div>
+
+<body>
+    <main>
+        <div class="card-container">
+            <div class="home-page-card full-width-card">
+                <h2>Pay your annual dues with Paypal</h2>
+                <form class="paypal-form" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <p>
+                        If you wish to pay multiple years for your dues, you now have the choice
+                        to pay from 1 through 5 years by using this PayPal button below. Just select the
+                        pull-down menu and select the amount of years you would like to pay.
+                    </p>
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="K8LR443BBC4G6">
+                    <input type="hidden" name="on0" value="Pay Multiple Year Dues Here">
+                                Pay Multiple Year Dues Here
+                                <select name="os0">
+                                    <option value="1 Year">1 Year $21.50 USD</option>
+                                    <option value="2 Years">2 Years $42.00 USD</option>
+                                    <option value="3 Years">3 Years $63.50 USD</option>
+                                    <option value="4 Years">4 Years $83.50 USD</option>
+                                    <option value="5 Years">5 Years $105.00 USD</option>
+                                    <option value="Lifetime">Lifetime $310.00 USD</option>
+                                </select> 
+                    <input type="hidden" name="currency_code" value="USD">
+                    <input type="image" src="images/PayPal-PayNow-Button.png" width="200"
+                        name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+
+
+                <h2>Pay your partial year dues with Paypal</h2>
+                <form class="paypal-form" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <p>When joining HARC in the middle of a fiscal year, you will pay a prorated
+                        first year dues. Select the drop-down button, choose the appropriate month you are joining on, and select the "Buy Now" button. 
+                    </p>
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="DFCF8AFAYNXNL">
+                    <input type="hidden" name="on0" value="Months Chosen">Months Chosen                    
+                    <select name="os0">
+                        <option value="Full Year">Full Year $21.50 USD</option>
+                        <option value="11 Mo">May $19.83 USD</option>
+                        <option value="10 Mo">June $18.17 USD</option>
+                        <option value="9 Mo">July $16.50 USD</option>
+                        <option value="8 Mo">August $14.83 USD</option>
+                        <option value="7 Mo">September $13.17 USD</option>
+                        <option value="6 Mo">October $11.50 USD</option>
+                        <option value="5 Mo">November $9.83 USD</option>
+                        <option value="4 Mo">December $8.17 USD</option>
+                        <option value="3 Mo">January $6.50 USD</option>
+                    </select>
+                    <input type="hidden" name="currency_code" value="USD">
+                    <input type="image" src="images/PayPal-PayNow-Button.png" width="200"
+                        name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+                <p></p>
+
+                <h3>Donate to the Club!</h3>
+                <form class="paypal-form" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <p> The Highline Amateur Radio Club is a 501c3 compliant IRS Exempt club.
+                        If you would like to donate money to the club for any reason, use the link below.</p>
+                    <p>Thank you!</p>
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="X5D25AJKNV2Z2">
+                    <input type="image" src="images/PayPal-Donate-PayNow-Button.png" name="submit" width="200"
+                        alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+            </div>
+        </div>
+    </main>
+    <div data-load="footer.html"></div>
+</body>
+
+</html>
