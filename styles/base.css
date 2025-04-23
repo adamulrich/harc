@@ -693,13 +693,23 @@ div.text-align-left p{
   text-align: left;
 }
 
-.frequencies th, td {
+/* div.frequencies th, td {
   font-size: medium;
   font-family: 'Courier New', Courier, monospace;
   padding: 12px;
   text-align: left;
   border: black 1px solid;
+} */
+
+div.center th, td {
+  font-size: medium;
+  padding: 2px;
+  font-family: 'Courier New', Courier, monospace;
+
+  text-align: left;
+  border: black 1px solid;
 }
+
 
 table.frequencies th {
   font-family: Arial, Helvetica, sans-serif;

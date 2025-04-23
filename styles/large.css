@@ -14,8 +14,13 @@
   
   div.weather-card {
     grid-column: 1/2;
-    grid-row: 1/2;
+    grid-row: 2/3;
     width: auto;
+  }
+
+  div.newsletter-card {
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
 
   main div .large-view,
@@ -60,9 +65,4 @@
   header nav ul li a {
     font-size: 1.1em;
   } 
-
-  div.newsletter-card {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
 }
