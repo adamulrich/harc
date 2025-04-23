@@ -736,3 +736,8 @@ table.frequencies tr:hover {background-color: #ddd;}
   align-items: center;
   grid-template-columns: 1fr 1fr;
 }
+
+.calendar-frame {
+  width: 350px;
+  height: 200px;
+}
