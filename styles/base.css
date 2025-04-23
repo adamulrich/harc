@@ -717,6 +717,7 @@ table.frequencies tr:hover {background-color: #ddd;}
 
 .two-column-card {
   display: grid;
+  justify-items: center;
+  align-items: center;
   grid-template-columns: 1fr 1fr;
-  column-gap: 100px;
 }

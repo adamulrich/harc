@@ -2,13 +2,13 @@
   
   div.about-card {
     grid-column: 2/3;
-    grid-row: 1/2;
+    grid-row: 1/1;
     width: auto;
   }
 
   div.about-contact-card {
     grid-column: 2/3;
-    grid-row: 1/5;
+    grid-row: 1/2;
     width: auto;
   }
   
@@ -61,4 +61,8 @@
     font-size: 1.1em;
   } 
 
+  div.newsletter-card {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
 }
