@@ -58,7 +58,7 @@
 
   div.status-card {
     margin-left: 50px;
-    width: 90%;
+    /* width: 90%; */
     margin: 0 auto;
   }
 
@@ -76,6 +76,15 @@
     justify-items: center;
     align-items: center;
     grid-template-columns: 1fr 1fr;
+  }
+
+  div.meeting-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  div.meeting-cards div.full-width-card {
+    grid-column: auto;
   }
 
 }
