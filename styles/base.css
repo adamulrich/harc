@@ -66,11 +66,16 @@ body {
 
 p,
 ul,
-li,
-a {
+li {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color);
 }
+
+a {
+  font-family: var(--paragraph-font);
+  color: var(--nav-background-color);
+}
+
 
 .menu-btn {
   width: 40px;
