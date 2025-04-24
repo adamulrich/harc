@@ -10,7 +10,7 @@
   --accent2-color: #fff;
   --accent3-color: #d5ff61;
   --accent4-color: #89ebfc;
-  --accent5-color: #efff97;
+  --accent5-color: #1501f0;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Montserrat";
@@ -26,14 +26,16 @@
   --paragraph-color-on-white: #5e5e63;
 
   /* paragraph text on a white background */
-  --paragraph-color-on-color: #5e5e63;
+  --paragraph-color-on-color: #0909cb;
 
   /* paragraph text on a colored background */
-  --paragraph-background-color: #d5a75d;
+  --paragraph-background-color: #8dc6d7;
   --nav-link-color: white;
   --nav-background-color: #2fa229c5;
   --nav-hover-link-color: #1d40a8;
   --nav-hover-background-color: #d5ff6194;
+
+  --link-color:  #a549bc;
 
   /* hard coded values */
   --main-div-height: 200px;
@@ -73,7 +75,7 @@ li {
 
 a {
   font-family: var(--paragraph-font);
-  color: var(--nav-background-color);
+  color: var(--link-color);
 }
 
 
