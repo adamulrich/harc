@@ -696,17 +696,9 @@ div.text-align-left {
   align-items:normal
 }
 
-div.text-align-left p{
+div.text-align-left p, li{
   text-align: left;
 }
-
-/* div.frequencies th, td {
-  font-size: medium;
-  font-family: 'Courier New', Courier, monospace;
-  padding: 12px;
-  text-align: left;
-  border: black 1px solid;
-} */
 
 div.center th, td {
   font-size: medium;
