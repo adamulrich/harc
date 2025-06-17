@@ -742,3 +742,7 @@ form.paypal-form {
   align-items: center;
   row-gap: 15px;
 }
+
+div.home-page-card img.full-width-card-img {
+  max-width: 100%;
+}
