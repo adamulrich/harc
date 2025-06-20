@@ -19,5 +19,4 @@ jobs:
 
       - name: Deploy files via SCP
         run: |
-          scp -r ./your-website-folder/* username@yourdomain.com:/home/username/public_html
-          
+          scp -r ./website/* high10000@highlinearc.org/home/high10000/public_html
