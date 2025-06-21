@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="scripts/jquery-3.7.1.min.js"></script>
-    <script src="scripts/script.js" defer></script>
+    <script src="scripts/script.js"></script>
     <script src="scripts/weather.js" defer></script>
     <script type="text/javascript">
         $(function(){
@@ -38,7 +38,9 @@
 </head>
 <div data-load="header.html"></div>
 <body>
-   
+   <script>
+        displayBannerIfValid();
+   </script>
     <main>
         <div class="hero">
             <picture class="hero-image-container">
@@ -47,6 +49,8 @@
                 <img src="images/RegionalMap.png" class="hero-img" width="400" height="225"
                     alt="Map of Region" >
             </picture>
+        </div>
+        <div class="banner home-page-card">
         </div>
         <div class="card-container">
             <div class="about-card home-page-card">
