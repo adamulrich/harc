@@ -35,7 +35,7 @@ async function displayBannerIfValid() {
 
             if (today <= bannerDate) {
                 const banner = document.createElement('div');
-                banner.textContent = message.trim();
+                banner.innerHTML = message.trim();
                 banner.style.cssText = `
                     background-color:rgb(248, 159, 152);
                     color:rgb(18, 77, 128)
