@@ -747,3 +747,7 @@ form.paypal-form {
 div.home-page-card img.full-width-card-img {
   max-width: 100%;
 }
+
+div.banner {
+ width: 95%; 
+}
