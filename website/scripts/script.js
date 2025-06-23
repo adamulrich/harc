@@ -30,7 +30,7 @@ async function displayBannerIfValid() {
         let bannerDisplayed = false;
 
         for (let line of lines) {
-            const [dateStr, message] = line.split(',');
+            const [dateStr, message] = line.split(',,');
             const bannerDate = new Date(dateStr.trim());
 
             if (today <= bannerDate) {
@@ -46,12 +46,51 @@ async function displayBannerIfValid() {
                 `;
                 bannerContainer.appendChild(banner);
                 bannerDisplayed = true;
-                break;
+
             }
         }
 
         if (!bannerDisplayed) {
             bannerContainer.style.display = 'none';
+        }
+    } catch (err) {
+        console.error('Error displaying banner:', err);
+    }
+}
+
+async function displayNewsIfValid() {
+    try {
+        const response = await fetch('news.txt');
+        if (!response.ok) throw new Error('Failed to fetch news.txt');
+
+        const text = await response.text();
+        const lines = text.trim().split('\n');
+
+        const today = new Date();
+        const newsItemContainer = document.querySelector('.news-list');
+
+        if (!newsItemContainer) {
+            console.warn('No element with class "news-list" found.');
+            return;
+        }
+
+        let newsItemDisplayed = false;
+
+        for (let line of lines) {
+            const [dateStr, message] = line.split(',,');
+            const newsDate = new Date(dateStr.trim());
+
+            if (today <= newsDate) {
+                const newsItem = document.createElement('li');
+                newsItem.classList.add('news-item')
+                newsItem.innerHTML = message.trim();
+                newsItemContainer.appendChild(newsItem);
+                newsItemDisplayed = true;
+            }
+        }
+
+        if (!newsItemDisplayed) {
+            document.querySelector('.news-header').style.display = 'none';
         }
     } catch (err) {
         console.error('Error displaying banner:', err);

@@ -749,5 +749,9 @@ div.home-page-card img.full-width-card-img {
 }
 
 div.banner {
- width: 95%; 
+  width: 95%; 
+}
+
+ul.news-list li  p {
+  text-align: left;
 }
