@@ -71,6 +71,7 @@ ul,
 li {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color);
+  margin-left: 5px;
 }
 
 a {
