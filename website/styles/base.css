@@ -689,6 +689,10 @@ div.full-width-card {
   grid-column: 1/3;
 }
 
+div.map-card {
+  display: block;
+}
+
 main div.home-page-card a {
   display: inline;
 }

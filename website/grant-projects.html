@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Highline Amateur Radio Club">
+    <meta name="theme-color" content="blue">
+    <meta name="name" content="Highline ARC">
+    <meta name="application-name" content="Highline ARC">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" sizes="128x128" href="images/harc_logo/harc_logo_128.JPG">
+    <link rel="icon" sizes="180x180" href="images/harc_logo/harc_logo_180.JPG">
+    <link rel="icon" sizes="192x192" href="images/harc_logo/harc_logo_192.JPG">
+    <link rel="icon" sizes="256x256" href="images/harc_logo/harc_logo_256.JPG">
+    <link rel="icon" sizes="512x512" href="images/harc_logo/harc_logo_512.JPG">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/script.js" defer></script>
+    <script type="text/javascript">
+        $(function () {
+            $("[data-load]").each(function () {
+                $(this).load($(this).data("load"), function () {
+                });
+            });
+        })
+    </script>
+    <title>Highline ARC</title>
+</head>
+<div data-load="header.html"></div>
+
+<body>
+    <main>
+        <div class="map-card">
+            <iframe 
+            src="https://www.google.com/maps/d/embed?mid=1whdUXG5XEBsNtc8UXfY8mVk3BLN_FbA&ehbc=2E312F&noprof=1"
+                width="100%" height="500"></iframe>
+        </div>
+        <div class="card-container">
+            <div class="full-width-card">
+                <h2>MOU Status</h2>
+                 <table border="1" cellpadding="6" cellspacing="0" align="center">
+                    <thead>
+                        <tr>
+                            <th>Location</th>
+                            <th>Status / Action Items</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Burien/FS28/FS29</td>
+                            <td>In limbo.</td>
+                        </tr>
+                        <tr>
+                            <td>SeaTac MOU</td>
+                            <td>Signed, approved and signed and in hand.</td>
+                        </tr>
+                        <tr>
+                            <td>Des Moines/ Des Moines PD/ FS67</td>
+                            <td>Partially completed. Approved by the city, waiting for SKF approval</td>
+                        </tr>
+                        <tr>
+                            <td>Normandy Park</td>
+                            <td>Nelson says Normandy Park didn’t want an MOU. Kim to talk to Nelson.</td>
+                        </tr>
+                        <tr>
+                            <td>Highline Water District McMicken</td>
+                            <td>Completed. MOU is in the mail.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>ARDC Grant Project Summary</h2>
+                
+                <table border="1" cellpadding="6" cellspacing="0" align="center">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Status</th>
+                            <th>Priority</th>
+                            <th>Scope</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Digital Radio Site Infrastructure</td>
+                            <td></td>
+                            <td>Priority 1</td>
+                            <td>
+                                Development of digital radio infrastructure at North Hill Water Tower (Des Moines) and
+                                SeaTac City Hall. Includes UHF, HamWAN, AREDN, Winlink, and repeater systems. Supports
+                                regional emergency communications.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pre-Installed Antennas at Critical Facilities</td>
+                            <td></td>
+                            <td>Priority 2</td>
+                            <td>
+                                Install VHF/UHF antennas at 14 emergency sites (fire stations, police stations, city
+                                halls, water district). Includes Comet CX-333 and GP-15 antennas. Electrical contractor
+                                required for some installs.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Deployable AREDN Mesh Kits</td>
+                            <td></td>
+                            <td>Priority 2</td>
+                            <td>
+                                Three kits for Des Moines, SeaTac, and Burien. Includes mesh radios, switches, IP
+                                phones, and cables for emergency digital IP networks.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>HF Digital Messaging Go-Box</td>
+                            <td></td>
+                            <td>Priority 2</td>
+                            <td>
+                                Two kits for Normandy Park and Burien. Supports Winlink via Amateur Radio or SHARES HF
+                                networks for statewide/national emergency messaging.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Digital Mobile Radio Equipment</td>
+                            <td></td>
+                            <td>Priority 3</td>
+                            <td>
+                                CS-800D DMR/FM radios for critical sites. Includes handheld Anytone 878UV radios for
+                                each city. Used for training, public service, and emergencies.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Winlink + VARA FM Messaging Equipment</td>
+                            <td></td>
+                            <td>Priority 3</td>
+                            <td>
+                                HYS TC-8900R quad-band radios and DRA-70 USB interfaces for digital messaging. Supports
+                                6m, 144 MHz, and 440 MHz. Enables peer-to-peer Winlink across Highline area.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>220 MHz Voice Radio Capability</td>
+                            <td></td>
+                            <td>Priority 3</td>
+                            <td>
+                                One radio kit per city to support WA State EOC directive for 220 MHz emergency
+                                communications. Reduces congestion on VHF/UHF bands.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Secure Storage Cabinets</td>
+                            <td></td>
+                            <td>Priority 3</td>
+                            <td>
+                                Cabinets for storing amateur radio equipment and supplies at critical sites. Includes
+                                branding for HARC and ARDC.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Computer Equipment</td>
+                            <td></td>
+                            <td>Not Requested</td>
+                            <td>
+                                HARC will self-fund computers using surplus city laptops. No grant funds requested for
+                                this category.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Training & Outreach Initiatives</td>
+                            <td></td>
+                            <td>No Funding Requested</td>
+                            <td>
+                                Includes recruiting CERT volunteers, connecting new hams to training and Elmers, Winlink
+                                and DMR clinics, and ongoing ACS/public service development.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </main>
+    <div data-load="footer.html"></div>
+</body>
+
+</html>
