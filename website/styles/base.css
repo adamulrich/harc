@@ -307,8 +307,8 @@ a:hover {
 nav a:hover {
   background-color: var(--nav-hover-background-color);
   color: var(--nav-hover-link-color);
-  margin-left: 0;
-  width: 110%;
+  margin-left: 2px;
+  width: 106%;
 }
 
 .active {
