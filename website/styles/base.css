@@ -760,3 +760,21 @@ div.banner {
 ul.news-list li  p {
   text-align: left;
 }
+
+div.newsletter-card {
+  justify-content: flex-start;
+  gap: 2px;
+}
+
+div.newsletter-card h2,
+div.newsletter-card h3 {
+  margin: 2px 0;
+}
+
+div.newsletter-card img {
+  margin: 4px auto;
+}
+
+div.newsletter-card hr {
+  margin: 6px 0;
+}
