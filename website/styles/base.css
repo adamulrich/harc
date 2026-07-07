@@ -217,6 +217,7 @@ div.home-page-card {
   padding: 0.75em;
   margin: 5px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 div.card-container,
@@ -225,6 +226,29 @@ div.about-us-card-container {
   flex-flow: row wrap;
   width: 100%;
   min-width: 280px;
+}
+
+div.sidebar-stack {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+div.sidebar-stack div.home-page-card {
+  width: calc(100% - 10px);
+  box-sizing: border-box;
+}
+
+div.community-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+div.community-layout > div.home-page-card,
+div.community-layout > div.sidebar-stack {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .date {

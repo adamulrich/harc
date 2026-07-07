@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="386" height="386" viewBox="0 0 386 386" role="img" aria-labelledby="title desc">
+  <title id="title">N7CFO PNW Ham Event Schedule</title>
+  <desc id="desc">A square event graphic with centered text for the N7CFO Pacific Northwest ham event schedule.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b2f4a" />
+      <stop offset="100%" stop-color="#1e6b52" />
+    </linearGradient>
+  </defs>
+  <rect width="386" height="386" rx="24" fill="url(#bg)" />
+  <rect x="16" y="16" width="354" height="354" rx="18" fill="none" stroke="#f7d774" stroke-width="4" />
+  <text x="193" y="120" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="700" fill="#ffffff">N7CFO</text>
+  <text x="193" y="188" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#f7d774">PNW Ham Event</text>
+  <text x="193" y="244" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#f7d774">Schedule</text>
+</svg>
