@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Highline Amateur Radio Club McMicken Water Tower project">
+    <meta name="theme-color" content="blue">
+    <meta name="name" content="Highline ARC">
+    <meta name="application-name" content="Highline ARC">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" sizes="128x128" href="images/harc_logo/harc_logo_128.JPG">
+    <link rel="icon" sizes="180x180" href="images/harc_logo/harc_logo_180.JPG">
+    <link rel="icon" sizes="192x192" href="images/harc_logo/harc_logo_192.JPG">
+    <link rel="icon" sizes="256x256" href="images/harc_logo/harc_logo_256.JPG">
+    <link rel="icon" sizes="512x512" href="images/harc_logo/harc_logo_512.JPG">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <style>
+        .mcmicken-detail p,
+        .mcmicken-detail li {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .mcmicken-detail ul {
+            padding-left: 1.5rem;
+        }
+
+        .mcmicken-gallery {
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        }
+
+        @media only screen and (max-width: 640px) {
+            .mcmicken-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/lightbox.js" defer></script>
+    <script type="text/javascript">
+        $(function () {
+            $("[data-load]").each(function () {
+                $(this).load($(this).data("load"), function () {
+                });
+            });
+        })
+    </script>
+    <title>McMicken Water Tower | Highline ARC</title>
+</head>
+<div data-load="header.html"></div>
+
+<body>
+    <main>
+        <div class="card-container">
+            <div class="full-width-card home-page-card text-align-left mcmicken-detail">
+                <h2>McMicken Water Tower</h2>
+                <h3>Progress Summary</h3>
+                <p>This project is focused on preparing the McMicken site for a new HARC container installation. The main site work under review is the concrete pad expansion needed to support the new enclosure footprint. The existing enclosure is approximately 6 feet by 6 feet 4 inches, and the existing pad is about 7 feet 8 inches wide by 7 feet 6 inches long, including the threshold on the south end. The HARC building footprint is about 7 feet 4 inches wide by 8 feet long, and the current pad requirement under review is 8 feet 8 inches wide by 8 feet 4 inches long, again with the threshold at the south end. Based on the current design notes, that means the pour would extend the existing pad by about 2 feet in width and 18 inches in length.</p>
+                <h3>Photo Gallery</h3>
+                <div class="activity-gallery mcmicken-gallery" data-lightbox-gallery>
+                    <figure>
+                        <img src="images/activities/mcmicken/img-2481.jpeg" alt="McMicken Water Tower project photo 1">
+                    </figure>
+                    <figure>
+                        <img src="images/activities/mcmicken/img-2482.jpeg" alt="McMicken Water Tower project photo 2">
+                    </figure>
+                    <figure>
+                        <img src="images/activities/mcmicken/img-2483.jpeg" alt="McMicken Water Tower project photo 3">
+                    </figure>
+                    <figure>
+                        <img src="images/activities/mcmicken/img-2484.jpeg" alt="McMicken Water Tower project photo 4">
+                    </figure>
+                    <figure>
+                        <img src="images/activities/mcmicken/img-2485.jpeg" alt="McMicken Water Tower project photo 5">
+                    </figure>
+                    <figure>
+                        <img src="images/activities/mcmicken/img-2486.jpeg" alt="McMicken Water Tower project photo 6">
+                    </figure>
+                    <figure>
+                        <img src="images/activities/mcmicken/img-2487.jpeg" alt="McMicken Water Tower project photo 7">
+                    </figure>
+                    <figure>
+                        <img src="images/activities/mcmicken/img-2488.jpeg" alt="McMicken Water Tower project photo 8">
+                    </figure>
+                    <figure>
+                        <img src="images/activities/mcmicken/img-2489.jpeg" alt="McMicken Water Tower project photo 9">
+                    </figure>
+                    <figure>
+                        <img src="images/activities/mcmicken/finish-work-1.jpg" alt="McMicken Water Tower project photo 10">
+                    </figure>
+                    <figure>
+                        <img src="images/activities/mcmicken/finish-work-2.jpg" alt="McMicken Water Tower project photo 11">
+                    </figure>
+                    <figure>
+                        <img src="images/activities/mcmicken/finish-work-3.jpg" alt="McMicken Water Tower project photo 12">
+                    </figure>
+                    <figure>
+                        <img src="images/activities/mcmicken/finish-work-4.jpg" alt="McMicken Water Tower project photo 13">
+                    </figure>
+                    <figure>
+                        <img src="images/activities/mcmicken/finish-work-5.jpg" alt="McMicken Water Tower project photo 14">
+                    </figure>
+                </div>
+                <p><a href="community-presentations.html">Back to Presentations and Activities</a></p>
+            </div>
+        </div>
+    </main>
+    <div data-load="footer.html"></div>
+</body>
+
+</html>
