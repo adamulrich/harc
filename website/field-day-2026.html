@@ -21,6 +21,45 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
+    <style>
+        .field-day-results p,
+        .field-day-results li,
+        .field-day-results td,
+        .field-day-results th {
+            line-height: 1.5;
+        }
+
+        .field-day-results table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0 1.5rem;
+        }
+
+        .field-day-results th,
+        .field-day-results td {
+            padding: 0.5rem 0.65rem;
+            border: 1px solid #333;
+            text-align: left;
+        }
+
+        .field-day-results th {
+            background: #eef4e3;
+        }
+
+        .field-day-map {
+            margin: 1rem 0 1.5rem;
+            width: 100%;
+        }
+
+        div.home-page-card .field-day-map img {
+            display: block;
+            width: 80%;
+            max-width: none;
+            box-sizing: border-box;
+            border: 2px solid #2f2f2f;
+            box-shadow: 0 0 20px #777;
+        }
+    </style>
     <script src="scripts/jquery-3.7.1.min.js"></script>
     <script src="scripts/script.js" defer></script>
     <script src="scripts/lightbox.js" defer></script>
@@ -39,12 +78,99 @@
 <body>
     <main>
         <div class="card-container">
-            <div class="full-width-card home-page-card text-align-left">
+            <div class="full-width-card home-page-card text-align-left field-day-results">
                 <h2>ARRL Field Day at MarVista Park</h2>
                 <p><b>Date:</b> June 27, 2026</p>
                 <p><b>Location:</b> MarVista Park</p>
                 <p>Highline Amateur Radio Club will use this page for activity details related to ARRL Field Day at MarVista Park.</p>
                 <p>Field Day gives members and visitors a chance to operate, learn, and enjoy an on-the-air club event in the park.</p>
+                <h3>Summary of Results</h3>
+                <p>This summary is based on NC7G's Contest Summary Report for ARRL Field Day as created by N3FJP's ARRL Field Day Contest Log, version 6.6.10.</p>
+                <table>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Value</th>
+                    </tr>
+                    <tr>
+                        <td>Total Contacts</td>
+                        <td>64</td>
+                    </tr>
+                    <tr>
+                        <td>Total Points</td>
+                        <td>128</td>
+                    </tr>
+                    <tr>
+                        <td>Operating Period</td>
+                        <td>2026/06/27 18:10 - 2026/06/28 01:46</td>
+                    </tr>
+                    <tr>
+                        <td>Total Op Time (breaks &gt; 30 min deducted)</td>
+                        <td>-1:-04:-52</td>
+                    </tr>
+                    <tr>
+                        <td>Total Op Time (breaks &gt; 60 min deducted)</td>
+                        <td>6:30:34</td>
+                    </tr>
+                    <tr>
+                        <td>Avg Qs/Hr (breaks &gt; 30 min deducted)</td>
+                        <td>-59.2</td>
+                    </tr>
+                    <tr>
+                        <td>Total QSOs Running</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Total QSOs Search and Pounce</td>
+                        <td>64</td>
+                    </tr>
+                </table>
+                <h3>Contacts by Band and Mode</h3>
+                <table>
+                    <tr>
+                        <th>Band</th>
+                        <th>CW</th>
+                        <th>Phone</th>
+                        <th>Dig</th>
+                        <th>Total</th>
+                        <th>%</th>
+                    </tr>
+                    <tr>
+                        <td>40</td>
+                        <td>0</td>
+                        <td>36</td>
+                        <td>0</td>
+                        <td>36</td>
+                        <td>56</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>0</td>
+                        <td>25</td>
+                        <td>0</td>
+                        <td>25</td>
+                        <td>39</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <th>Total</th>
+                        <th>0</th>
+                        <th>64</th>
+                        <th>0</th>
+                        <th>64</th>
+                        <th>100</th>
+                    </tr>
+                </table>
+                <h3>Contact Map</h3>
+                <div class="field-day-map">
+                    <img src="images/activities/fd-2026/Field_Day_2026_map.jpg" alt="ARRL Field Day 2026 contact map">
+                </div>
                 <h3>Photo Gallery</h3>
                 <div class="activity-gallery" data-lightbox-gallery>
                     <figure>
