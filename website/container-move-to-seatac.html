@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Highline Amateur Radio Club container move to SeaTac">
+    <meta name="theme-color" content="blue">
+    <meta name="name" content="Highline ARC">
+    <meta name="application-name" content="Highline ARC">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" sizes="128x128" href="images/harc_logo/harc_logo_128.JPG">
+    <link rel="icon" sizes="180x180" href="images/harc_logo/harc_logo_180.JPG">
+    <link rel="icon" sizes="192x192" href="images/harc_logo/harc_logo_192.JPG">
+    <link rel="icon" sizes="256x256" href="images/harc_logo/harc_logo_256.JPG">
+    <link rel="icon" sizes="512x512" href="images/harc_logo/harc_logo_512.JPG">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <style>
+        .container-move-detail p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .container-move-gallery {
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        }
+
+        @media only screen and (max-width: 640px) {
+            .container-move-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/lightbox.js" defer></script>
+    <script type="text/javascript">
+        $(function () {
+            $("[data-load]").each(function () {
+                $(this).load($(this).data("load"), function () {
+                });
+            });
+        })
+    </script>
+    <title>Container Move to SeaTac | Highline ARC</title>
+</head>
+<div data-load="header.html"></div>
+
+<body>
+    <main>
+        <div class="card-container">
+            <div class="full-width-card home-page-card text-align-left container-move-detail">
+                <h2>Container Move to SeaTac</h2>
+                <p>Photos from the February 2026 move of the HARC container to SeaTac.</p>
+                <h3>Photo Gallery</h3>
+                <div class="activity-gallery container-move-gallery" data-lightbox-gallery>
+                    <figure><img src="images/activities/container-move-to-seatac/container-move-feb-2026-0.jpg" alt="Container move to SeaTac photo 1"></figure>
+                    <figure><img src="images/activities/container-move-to-seatac/container-move-feb-2026-1.jpg" alt="Container move to SeaTac photo 2"></figure>
+                    <figure><img src="images/activities/container-move-to-seatac/container-move-feb-2026-2.jpg" alt="Container move to SeaTac photo 3"></figure>
+                    <figure><img src="images/activities/container-move-to-seatac/container-move-feb-2026-3.jpg" alt="Container move to SeaTac photo 4"></figure>
+                    <figure><img src="images/activities/container-move-to-seatac/container-move-feb-2026-4.jpg" alt="Container move to SeaTac photo 5"></figure>
+                    <figure><img src="images/activities/container-move-to-seatac/container-move-feb-2026-5.jpg" alt="Container move to SeaTac photo 6"></figure>
+                    <figure><img src="images/activities/container-move-to-seatac/container-move-feb-2026-6.jpg" alt="Container move to SeaTac photo 7"></figure>
+                    <figure><img src="images/activities/container-move-to-seatac/container-move-feb-2026-7.jpg" alt="Container move to SeaTac photo 8"></figure>
+                    <figure><img src="images/activities/container-move-to-seatac/container-move-feb-2026-8.jpg" alt="Container move to SeaTac photo 9"></figure>
+                    <figure><img src="images/activities/container-move-to-seatac/container-move-feb-2026-9.jpg" alt="Container move to SeaTac photo 10"></figure>
+                    <figure><img src="images/activities/container-move-to-seatac/container-move-feb-2026-10.jpg" alt="Container move to SeaTac photo 11"></figure>
+                    <figure><img src="images/activities/container-move-to-seatac/container-move-feb-2026-11.jpg" alt="Container move to SeaTac photo 12"></figure>
+                    <figure><img src="images/activities/container-move-to-seatac/container-move-feb-2026-12.jpg" alt="Container move to SeaTac photo 13"></figure>
+                </div>
+                <p><a href="community-presentations.html">Back to Presentations and Activities</a></p>
+            </div>
+        </div>
+    </main>
+    <div data-load="footer.html"></div>
+</body>
+
+</html>
