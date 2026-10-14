@@ -781,6 +781,62 @@ div.banner {
   width: 95%; 
 }
 
+/* license resources */
+.license-page {
+  align-items: stretch;
+  gap: 10px;
+}
+
+.license-page .license-intro,
+.license-page .license-next-steps {
+  width: 100%;
+}
+
+.license-page .license-resource-card {
+  align-items: normal;
+  justify-content: flex-start;
+}
+
+.license-resource-card h3,
+.license-next-steps h3 {
+  width: 100%;
+  margin-top: 0;
+}
+
+.license-resource-card p,
+.license-next-steps p {
+  line-height: 1.5;
+}
+
+.license-resource-card ul {
+  width: 100%;
+  padding-left: 1.25rem;
+  box-sizing: border-box;
+}
+
+.license-resource-card li {
+  margin: 0.75rem 0;
+}
+
+.license-resource-card li a {
+  display: inline;
+}
+
+.resource-button {
+  display: inline-block !important;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.resource-button:hover {
+  background-color: var(--nav-hover-link-color);
+  color: white;
+}
+
 ul.news-list li  p {
   text-align: left;
 }
