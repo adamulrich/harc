@@ -4,38 +4,39 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 
 :root {
-  --primary-color: #ff8b00;
-  --secondary-color: #27a221;
-  --accent1-color: #ffae00b6;
+  --primary-color: #16444a;
+  --secondary-color: #3f7d58;
+  --accent1-color: #f28c28;
   --accent2-color: #fff;
-  --accent3-color: #d5ff61;
-  --accent4-color: #89ebfc;
-  --accent5-color: #1501f0;
+  --accent3-color: #f7c873;
+  --accent4-color: #dcefeb;
+  --accent5-color: #16444a;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Montserrat";
   --paragraph-font: "Lato";
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #155511;
+  --headline-color-on-white: #16444a;
 
   /* headlines on a white background */
-  --headline-color-on-color: #051a04;
+  --headline-color-on-color: #123238;
 
   /* headlines on a colored background */
-  --paragraph-color-on-white: #5e5e63;
+  --paragraph-color-on-white: #435257;
 
   /* paragraph text on a white background */
-  --paragraph-color-on-color: #0909cb;
+  --paragraph-color-on-color: #16444a;
 
   /* paragraph text on a colored background */
-  --paragraph-background-color: #8dc6d7;
+  --paragraph-background-color: #dcefeb;
   --nav-link-color: white;
-  --nav-background-color: #2fa229c5;
-  --nav-hover-link-color: #1d40a8;
-  --nav-hover-background-color: #d5ff6194;
+  --nav-background-color: #16444a;
+  --nav-hover-link-color: #16444a;
+  --nav-hover-background-color: #f7c873;
 
-  --link-color:  #a549bc;
+  --link-color: #176b72;
+  --paragraph-color: #435257;
 
   /* hard coded values */
   --main-div-height: 200px;
@@ -64,6 +65,12 @@ body {
   margin: 0 auto;
   font-size: 18px;
   text-align: left;
+  color: var(--paragraph-color);
+  background-color: #f3f7f6;
+}
+
+main {
+  padding: 0.75rem 0;
 }
 
 p,
@@ -77,6 +84,12 @@ li {
 a {
   font-family: var(--paragraph-font);
   color: var(--link-color);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--accent1-color);
+  outline-offset: 3px;
 }
 
 
@@ -112,6 +125,15 @@ h6 {
   color: var(--headline-color-on-white);
   font-size: medium;
   text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
 }
 
 .header-style {
@@ -151,7 +173,9 @@ header {
   padding: 0.75em;
   text-align: center;
   color: var(--paragraph-color-on-color);
-  background-color: var(--paragraph-background-color);
+  background: linear-gradient(135deg, #dcefeb, #c9e2df);
+  border-bottom: 4px solid var(--accent1-color);
+  box-shadow: 0 4px 18px rgba(22, 68, 74, 0.12);
   display: grid;
   grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
 }
@@ -178,8 +202,9 @@ header {
   list-style-type: none;
   overflow: hidden;
   background-color: var(--nav-background-color);
-  box-shadow: 0 0 30px #000000e6;
+  box-shadow: 0 12px 24px rgba(18, 50, 56, 0.2);
   padding-inline-start: 0;
+  border-radius: 0 0 10px 10px;
 }
 
 header nav ul {
@@ -194,7 +219,7 @@ header nav ul {
 .main-nav.open {
   display: flex;
   background-color: var(--nav-background-color);
-  box-shadow: 0 0 30px #000000e6;
+  box-shadow: 0 12px 24px rgba(18, 50, 56, 0.2);
 }
 
 .subtitle {
@@ -212,12 +237,20 @@ div.home-page-card {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-evenly;
-  box-shadow: 0 0 30px #777;
-  outline: 2px solid black;
-  padding: 0.75em;
-  margin: 5px;
-  width: 100%;
+  box-shadow: 0 8px 24px rgba(22, 68, 74, 0.12);
+  outline: none;
+  border: 1px solid #dbe7e5;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin: 8px;
+  width: calc(100% - 16px);
   box-sizing: border-box;
+  background-color: #fff;
+  transition: box-shadow 180ms ease, transform 180ms ease;
+}
+
+div.home-page-card:hover {
+  box-shadow: 0 12px 30px rgba(22, 68, 74, 0.17);
 }
 
 div.card-container,
@@ -312,7 +345,7 @@ header nav ul li a {
   width: 100%;
   color: var(--nav-link-color);
   text-align: center;
-  padding: 0.75em 0;
+  padding: 0.8em 0.5em;
   text-decoration: none;
   font-size: 0.7em;
   background:
@@ -322,6 +355,7 @@ header nav ul li a {
       transparent) bottom / var(--d, 0) 3px no-repeat;
   transition: 0.5s;
   margin-left: 0;
+  border-radius: 6px;
 }
 
 a:hover {
@@ -397,6 +431,10 @@ div.hero-contrast-heading a {
 .hero {
   position: relative;
   padding: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(22, 68, 74, 0.12);
+  margin-bottom: 1rem;
 }
 
 .hero-contrast-heading {
@@ -448,6 +486,8 @@ footer {
   text-align: center;
   color: var(--headline-color-on-color);
   background-color: var(--paragraph-background-color);
+  border-top: 1px solid #c3d9d6;
+  border-radius: 12px 12px 0 0;
   margin-top: 1em;
   justify-content: space-between;
 }
@@ -535,8 +575,8 @@ footer hr {
 
 
 .current-menu {
-  color: #000;
-  background-color: var(--accent4-color);
+  color: var(--headline-color-on-white);
+  background-color: var(--accent3-color);
 }
 
 .fresh-grid {
