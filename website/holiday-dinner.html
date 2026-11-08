@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Highline Amateur Radio Club annual holiday dinner menu and event details.">
+    <meta name="theme-color" content="blue">
+    <meta name="name" content="Highline ARC">
+    <meta name="application-name" content="Highline ARC">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" sizes="128x128" href="images/harc_logo/harc_logo_128.JPG">
+    <link rel="icon" sizes="180x180" href="images/harc_logo/harc_logo_180.JPG">
+    <link rel="icon" sizes="192x192" href="images/harc_logo/harc_logo_192.JPG">
+    <link rel="icon" sizes="256x256" href="images/harc_logo/harc_logo_256.JPG">
+    <link rel="icon" sizes="512x512" href="images/harc_logo/harc_logo_512.JPG">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/script.js" defer></script>
+    <script type="text/javascript">
+        $(function () {
+            $("[data-load]").each(function () {
+                $(this).load($(this).data("load"));
+            });
+        });
+    </script>
+    <title>Annual Holiday Event | Highline Amateur Radio Club</title>
+</head>
+
+<div data-load="header.html"></div>
+
+<body>
+    <main>
+        <div class="card-container">
+            <div class="home-page-card full-width-card text-align-left holiday-dinner-card">
+                <h2>HARC Annual Holiday Event</h2>
+                <p>Review the dinner menu and event details below.</p>
+                <img src="images/activities/holiday/holiday-dinner-menu-2026.png"
+                    alt="Highline Amateur Radio Club annual holiday event dinner menu with date, time, location, and dinner options">
+            </div>
+        </div>
+    </main>
+    <div data-load="footer.html"></div>
+</body>
+
+</html>

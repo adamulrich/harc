@@ -458,7 +458,7 @@ div.home-page-card img {
   border: 2px solid #333;
   background-color: white;
   /* width: 100%; */
-  max-width: 400px;
+  max-width: 100%;
   height: auto;
 }
 
@@ -875,6 +875,12 @@ div.banner {
 .resource-button:hover {
   background-color: var(--nav-hover-link-color);
   color: white;
+}
+
+.holiday-dinner-card img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 ul.news-list li  p {

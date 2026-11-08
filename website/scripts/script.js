@@ -38,13 +38,14 @@ async function displayBannerIfValid() {
                 banner.innerHTML = message.trim();
                 banner.style.cssText = `
                     background-color:rgb(248, 159, 152);
-                    color:rgb(18, 77, 128)
+                    color:rgb(18, 77, 128);
                     padding: 10px;
                     text-align: center;
                     font-weight: bold;
                     border: 1px solid #ccc;
                 `;
                 bannerContainer.appendChild(banner);
+                bannerContainer.style.display = 'flex';
                 bannerDisplayed = true;
 
             }
