@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A memorial page honoring Highline Amateur Radio Club silent key operators.">
+    <meta name="theme-color" content="blue">
+    <meta name="name" content="Highline ARC">
+    <meta name="application-name" content="Highline ARC">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" sizes="128x128" href="images/harc_logo/harc_logo_128.JPG">
+    <link rel="icon" sizes="180x180" href="images/harc_logo/harc_logo_180.JPG">
+    <link rel="icon" sizes="192x192" href="images/harc_logo/harc_logo_192.JPG">
+    <link rel="icon" sizes="256x256" href="images/harc_logo/harc_logo_256.JPG">
+    <link rel="icon" sizes="512x512" href="images/harc_logo/harc_logo_512.JPG">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/script.js" defer></script>
+    <script type="text/javascript">
+        $(function () {
+            $("[data-load]").each(function () {
+                $(this).load($(this).data("load"));
+            });
+        });
+    </script>
+    <title>Silent Key Operators | Highline Amateur Radio Club</title>
+</head>
+
+<div data-load="header.html"></div>
+
+<body>
+    <main>
+        <div class="card-container silent-key-page">
+            <div class="home-page-card silent-key-intro text-align-left">
+                <h2>Silent Key Operators</h2>
+                <p>This page will honor members and friends of the Highline Amateur Radio Club who have passed away.
+                    Their service, friendship, and contributions to amateur radio will be remembered here.</p>
+                <p class="silent-key-empty">The list is being prepared. Please check back for future entries.</p>
+            </div>
+
+            <div class="home-page-card silent-key-list text-align-left">
+                <h3>Memorial Entries</h3>
+                <p>Open an entry to view an optional photograph and biography.</p>
+
+                <!-- Duplicate this details block for each future operator. -->
+                <details class="silent-key-entry">
+                    <summary>Name — CALLSIGN — Date of SK</summary>
+                    <div class="silent-key-entry-content">
+                        <p><strong>Photo:</strong> Optional</p>
+                        <p><strong>Biography:</strong> Add a short biography, service history, and contributions to
+                            amateur radio here.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </main>
+    <div data-load="footer.html"></div>
+</body>
+
+</html>
